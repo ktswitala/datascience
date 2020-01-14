@@ -1,0 +1,13 @@
+The visual is an exploratory data analysis of the relationships between 4 variables, 3 economic and 1 population measure for 20 different regions in Michigan. 
+
+The upper triangle fits a regression line for each pair of variables. From this it can be seen that there is a modest negative correlation between a region's mean unemployment % and the amount of people who have stayed in a region over a span of 20 years. The housing index is the variable that seems to have the most correlation with all other variables. An outlier can be seen on the housing/unemployment and housing/population plots, reducing the correlations somewhat. The remaining two variable pairs are only weakly correlated but the direction is as expected.
+
+The lower triangle shows a density plot that is weighted by the population of a region. This shows the experience of a 'typical' resident of Michigan better than county-level data can. You can see that the aforementioned outlier from the upper triangle plot does not provide much weight at all to the density chart. Overall, it makes clear that among these 3 economic variables, unemployment is the strongest factor in the decision to leave or join a region.
+
+Truthfulness: The regional data accounts for 80% of the population living in Michigan, so it provides a good picture of the trends for most people living in the state. The 20 year span for the datasets was chosen as a nice, even number to smooth out short-term trends and was not cut off arbitrarily based on seeing the data beforehand. Very little preprocessing/cleanup was applied to the data.
+
+Beauty: The histogram in the middle was removed because it provided little insight and most histograms with only 20 data points don't look very nice, in my opinion. The ticks and labels on the upper triangle were flipped from the default to provide the figure some overall symmetry.
+
+Functional: A pair plot, basic linear regression, and density plots are a widely accepted method for exploratory data analysis.
+
+Insightful: I think I learned something about Michigan's economic situation by inspecting this figure.
